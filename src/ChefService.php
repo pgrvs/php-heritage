@@ -4,6 +4,7 @@ namespace App;
 
 class ChefService extends Salarie
 {
+    public CONST DEUXPOURCENT = 0.02;
     private float $salaireFixe;
     private Service $service;
 
@@ -21,7 +22,7 @@ class ChefService extends Salarie
 
     public function calculerSalaire()
     {
-        return round($this->salaireFixe + $this->service->getChiffreAffaireMensuelService()/50,2);
+        return round($this->salaireFixe + $this->service->getChiffreAffaireMensuelService()*self::DEUXPOURCENT,2);
     }
 
     /**

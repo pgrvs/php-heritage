@@ -7,6 +7,7 @@ namespace App;
 // l'exception du constructeur) est implicitement déclaré dans Patron
 class Patron extends Salarie
 {
+    private CONST UNPOURCENT = 0.01;
     // Spécificités attributes
     private string $voiture;
     private float $primeDirection;
@@ -31,7 +32,7 @@ class Patron extends Salarie
 
     public function calculerSalaire()
     {
-        return round($this->getEntreprise()->getChiffreAffaireMensuelEntreprise()/100 + $this->primeDirection,2);
+        return round($this->getEntreprise()->getChiffreAffaireMensuelEntreprise()*self::UNPOURCENT + $this->primeDirection,2);
     }
 
     /**
