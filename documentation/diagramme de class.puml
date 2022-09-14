@@ -1,0 +1,45 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+skinparam classAttributeIconSize 0
+
+abstract class Salarié{
+    - prénom : string
+    - nom : string
+    - age : int
+    {abstract} presenter()
+    {abstract} calculerSalaire()
+}
+
+class Employe {
+}
+
+class ChefDeService {
+    -service
+}
+
+class Patron {
+    - voiture : string
+    déplacer()
+}
+
+class Entreprise {
+    - nom : string
+    - ville : string
+    ajouterEmploye()
+    presenterEmployes()
+    getChefService() : array
+}
+
+class Interimaire {
+    - société d'intérime : string
+}
+
+Entreprise"0..*"->Salarié
+
+Salarié ^-- Patron : Hérite de
+Salarié ^-- ChefDeService : Hérite de
+Salarié ^-- Interimaire : Hérite de
+Salarié ^-- Employe : Hérite de
+
+@enduml
