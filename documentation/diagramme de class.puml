@@ -7,25 +7,32 @@ abstract class Salarié{
     - prénom : string
     - nom : string
     - age : int
+
     {abstract} presenter()
     {abstract} calculerSalaire()
 }
 
 class Employe {
+    - nbHeuresMensuelles : float
+    - tauxHoraire : float
+    - nbHeuresSup : float
 }
 
 class ChefDeService {
     -service
+    - salaireFixe : float
 }
 
 class Patron {
     - voiture : string
+    - primeDirection : float
     déplacer()
 }
 
 class Entreprise {
     - nom : string
     - ville : string
+    - chiffreAffaireMensuelEntreprise : float
     ajouterEmploye()
     presenterEmployes()
     getChefService() : array
@@ -35,9 +42,15 @@ class Interimaire {
     - société d'intérime : string
 }
 
-Entreprise"0..*"->Salarié
+class Service {
+    - nom : string
+    - chiffreAffaireMensuelService : float
+}
 
-Salarié ^-- Patron : Hérite de
+Entreprise"0..*"<-->"1..1"Salarié
+ChefDeService-->"1..1"Service
+
+Salarié ^- Patron : Hérite de
 Salarié ^-- ChefDeService : Hérite de
 Salarié ^-- Interimaire : Hérite de
 Salarié ^-- Employe : Hérite de

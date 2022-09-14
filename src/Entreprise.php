@@ -6,6 +6,7 @@ class Entreprise
 {
     private string $nom;
     private string $ville;
+    private float $chiffreAffaireMensuelEntreprise;
 
     //Association avec Salarié
     /**
@@ -43,6 +44,22 @@ class Entreprise
             }
         }
         return $chefsService;
+    }
+
+    /**
+     * @return float
+     */
+    public function getChiffreAffaireMensuelEntreprise(): float
+    {
+        return $this->chiffreAffaireMensuelEntreprise;
+    }
+
+    /**
+     * @param float $chiffreAffaireMensuelEntreprise
+     */
+    public function setChiffreAffaireMensuelEntreprise(float $chiffreAffaireMensuelEntreprise): void
+    {
+        $this->chiffreAffaireMensuelEntreprise = $chiffreAffaireMensuelEntreprise;
     }
 
     /**

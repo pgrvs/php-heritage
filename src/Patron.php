@@ -9,11 +9,12 @@ class Patron extends Salarie
 {
     // Spécificités attributes
     private string $voiture;
+    private float $primeDirection;
 
-    public function __construct(string $prenom, string $nom, int $age, string $voiture)
+    public function __construct(string $prenom, string $nom, int $age, Entreprise $entreprise,string $voiture)
     {
         // Appel au constructeur de la classe Employe
-        parent::__construct($prenom, $nom, $age);
+        parent::__construct($prenom, $nom, $age, $entreprise);
         $this->voiture = $voiture;
     }
 
@@ -30,6 +31,16 @@ class Patron extends Salarie
 
     public function calculerSalaire()
     {
-        // TODO: Implement calculerSalaire() method.
+        return $this->getEntreprise()->getChiffreAffaireMensuelEntreprise()/100 + $this->primeDirection;
     }
+
+    /**
+     * @param float $primeDirection
+     */
+    public function setPrimeDirection(float $primeDirection): void
+    {
+        $this->primeDirection = $primeDirection;
+    }
+
+
 }
