@@ -46,6 +46,26 @@ class Entreprise
         return $chefsService;
     }
 
+    public function getSalaires() : array {
+        $tableauSalaires = [];
+        foreach ($this->salaries as $salarie){
+            $tableauSalaires[] = ["salarie" => "{$salarie->getPrenom()} {$salarie->getNom()}", "salaire" => $salarie->calculerSalaire()];
+        }
+        return $tableauSalaires;
+    }
+
+    public function calculerMasseSalariale() : float {
+        $total = 0;
+        foreach ($this->salaries as $salarie){
+            $total += $salarie->calculerSalaire();
+        }
+        return $total;
+    }
+
+    public function calculerSalaireMoyen() : float {
+        return $this->calculerMasseSalariale()/count($this->salaries);
+    }
+
     /**
      * @return float
      */

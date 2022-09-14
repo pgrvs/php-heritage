@@ -21,7 +21,7 @@ class ChefService extends Salarie
 
     public function calculerSalaire()
     {
-        return $this->salaireFixe + $this->service->getChiffreAffaireMensuelService()/50;
+        return round($this->salaireFixe + $this->service->getChiffreAffaireMensuelService()/50,2);
     }
 
     /**

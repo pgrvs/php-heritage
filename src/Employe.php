@@ -21,7 +21,7 @@ class Employe extends Salarie
 
     public function calculerSalaire()
     {
-        return $this->nbHeuresMensuelles*$this->tauxHoraire+$this->nbHeuresSup*($this->tauxHoraire*1.25);
+        return round($this->nbHeuresMensuelles*$this->tauxHoraire+$this->nbHeuresSup*($this->tauxHoraire*1.25),2);
     }
 
     /**

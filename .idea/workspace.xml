@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a56aab64-24b1-43c0-8c21-9511b5dd6f1f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entreprise.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interimaire.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Salarie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stagiaire.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php-héritage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php-héritage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documentation/diagramme de class.puml" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/diagramme de class.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ChefService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChefService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Employe.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entreprise.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entreprise.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Patron.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patron.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Salarie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Salarie.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test3.php" beforeDir="false" afterPath="$PROJECT_DIR$/test3.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +68,7 @@
       <workItem from="1662966591978" duration="119000" />
       <workItem from="1662966727315" duration="8759000" />
       <workItem from="1663070214133" duration="6533000" />
-      <workItem from="1663135145405" duration="7609000" />
+      <workItem from="1663135145405" duration="11976000" />
     </task>
     <servers />
   </component>

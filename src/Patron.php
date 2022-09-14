@@ -31,7 +31,7 @@ class Patron extends Salarie
 
     public function calculerSalaire()
     {
-        return $this->getEntreprise()->getChiffreAffaireMensuelEntreprise()/100 + $this->primeDirection;
+        return round($this->getEntreprise()->getChiffreAffaireMensuelEntreprise()/100 + $this->primeDirection,2);
     }
 
     /**
